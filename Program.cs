@@ -21,19 +21,19 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int number = new Random().Next(10,1000);
-Console.WriteLine (number);
+// int number = new Random().Next(10,1000);
+// Console.WriteLine (number);
 
-int div10 = number / 10;
-if (div10 < 9)
-{
-    Console.WriteLine ("третьей цифры нет");
-}
-else
-{
-    int second = number %10;
-    Console.WriteLine (second);
-}
+// int div10 = number / 10;
+// if (div10 < 9)
+// {
+//     Console.WriteLine ("третьей цифры нет");
+// }
+// else
+// {
+//     int second = number %10;
+//     Console.WriteLine (second);
+// }
 
 
 
@@ -45,3 +45,15 @@ else
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+int number = new Random().Next(1,8);
+Console.WriteLine (number);
+
+if ((number == 6) || (number==7))
+{
+    Console.WriteLine ("Выходной");
+}
+else
+{
+  Console.WriteLine ("Будни"); 
+}
